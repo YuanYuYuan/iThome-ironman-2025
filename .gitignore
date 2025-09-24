@@ -2,3 +2,4 @@ _*
 .direnv
 .envrc
 target
+Cargo.lock
