@@ -1,0 +1,28 @@
+[package]
+name = "mirco-service"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+zenoh = "1.5.1"
+tokio = { version = "1", features = ["full"] }
+
+[[bin]]
+name = "echo_service"
+path = "src/bin/echo_service.rs"
+
+[[bin]]
+name = "convert_service"
+path = "src/bin/convert_service.rs"
+
+[[bin]]
+name = "sensor_publisher"
+path = "src/bin/sensor_publisher.rs"
+
+[[bin]]
+name = "sensor_subscriber"
+path = "src/bin/sensor_subscriber.rs"
+
+[[bin]]
+name = "client"
+path = "src/bin/client.rs"
